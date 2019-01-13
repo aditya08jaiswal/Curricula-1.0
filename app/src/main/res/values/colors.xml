@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#263238</color>
+    <color name="colorPrimaryDark">#000a12</color>
+    <color name="colorAccent">#ff5c38</color>
+
+    <color name="semTextColor">#000a12</color>
+    <color name="activityBackColor">#cfd8dc</color> <!--#263238-->
+
+    <color name="sem1col">#2F7D32</color>
+    <color name="sem2col">#ffb300</color>
+    <color name="sem3col">#383fff</color>
+    <color name="sem4col">#ff5c38</color>
+
+    <color name="toolbarFontColor">#ffffff</color>
+
+    <color name="subjectNameColor">#263238</color>
+    <color name="expListGroupColor">#263238</color>
+    <color name="expListGroupTextColor">#cfd8dc</color>
+    <color name="expListItemTextColor">#000a12</color>
+
+</resources>

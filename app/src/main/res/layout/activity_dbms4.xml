@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activityBackColor"
+    tools:context=".Sem4Activity.DBMS4Activity">
+
+    <include
+        layout="@layout/app_toolbar"
+        android:id="@+id/toolbar_activity_dbms4"
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="wrap_content" />
+
+    <ExpandableListView
+        android:id="@+id/dbms4_listView"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="0dp" />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_activity_dbms4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/DBMS4_APP_UNIT_ID">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

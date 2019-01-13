@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sem_cardViewH"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/sem_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/sem3" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/sem_textView"-->
+        <!--android:layout_width="180dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginHorizontal="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:text="Semester"-->
+        <!--android:textColor="@color/semTextColor"-->
+        <!--android:textFontWeight="20"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_below="@id/sem_cardViewH"-->
+        <!--/>-->
+
+
+</RelativeLayout>
+

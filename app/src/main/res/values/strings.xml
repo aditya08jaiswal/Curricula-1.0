@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Curricula</string>
+
+    <string name="CSE">CSE</string>
+    <string name="ECE">ECE</string>
+
+    <string name="AboutMenu">About</string>
+    <string name="SuggestionsMenu">Suggestions</string>
+
+    <string name="AboutQuestion">What is Curricula?</string>
+    <string name="AboutAnswer">This app is a warehouse for all the engineering related materials for IIIT students. However, it aims to later become a hub of all the study and course materials, as a result of contributions made by other fellow aspiring engineers. Your contributions and suggestions are requested.</string>
+
+    <string name="Developer">Developer</string>
+    <string name="AboutDeveloper">Aditya Jaiswal\nIIIT Surat</string>
+    <string name="Designer">Designer</string>
+    <string name="AboutDesigner">Kumar Harshvardhan\nIIIT Surat</string>
+
+    <string name="ADMOB_APP_ID">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="ABOUT_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="AC4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="AFL3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="CE3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="CN4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="CO3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DAA4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DBMS4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DC4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DLD2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DM2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="DSA2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EC3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ECS1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EDC1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EM1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EM2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EMW4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EN2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="EP1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="FCP1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="FIRSTSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="FOURTHSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ICTONE1_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="MAINACTIVITY_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="MC4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="MPI3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="OOT4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="OS4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="PSA3_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="SECONDSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="SS2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="SS4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="SUGGESTIONS_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="THIRDSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+
+
+</resources>

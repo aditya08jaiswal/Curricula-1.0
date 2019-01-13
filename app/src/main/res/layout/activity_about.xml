@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackColor"
+    tools:context=".ExtraActivity.AboutActivity">
+
+    <include
+        layout="@layout/app_toolbar"
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/about_question_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_about"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:text="@string/AboutQuestion" />
+
+        <TextView
+            android:id="@+id/about_answer_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_question_textView"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:textSize="18sp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/AboutAnswer" />
+
+    <View
+        android:id="@+id/view_about"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_above="@+id/devDesg_linear"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/devDesg_linear"
+        android:layout_above="@+id/adView_activity_about"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/aboutDev_textView"
+                android:text="@string/Developer"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/aboutDevDetail_textView"
+                android:text="@string/AboutDeveloper"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/aboutDesg_textView"
+                android:text="@string/Designer"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/aboutDesgDetail_textView"
+                android:text="@string/AboutDesigner"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_activity_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ABOUT_APP_UNIT_ID">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

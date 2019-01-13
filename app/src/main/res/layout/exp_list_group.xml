@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/expListGroupColor"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/activityBackColor"/>
+
+    <TextView
+        android:id="@+id/lblListHeader"
+        android:paddingStart="40dp"
+        android:text="text"
+        android:textColor="@color/expListGroupTextColor"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textStyle="bold"
+        android:autoSizeMinTextSize="60sp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

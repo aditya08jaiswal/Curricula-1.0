@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iam844.adityajaiswal.curricula">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SemesterActivity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SemesterActivity.FirstSemActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+        <activity android:name=".SemesterActivity.SecondSemActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+        <activity android:name=".SemesterActivity.ThirdSemActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+        <activity android:name=".SemesterActivity.FourthSemActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+        <activity android:name=".Fragment.CSE4Fragment" />
+        <activity android:name=".Fragment.ECE4Fragment" />
+        <activity android:name=".Sem3Activity.CO3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem3Activity.MPI3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem3Activity.CE3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem3Activity.PSA3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem3Activity.AFL3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem3Activity.EC3Activity" android:parentActivityName=".SemesterActivity.ThirdSemActivity"/>
+        <activity android:name=".Sem2Activity.DSA2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem2Activity.DM2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem2Activity.DLD2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem2Activity.SS2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem2Activity.EN2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem2Activity.EM2Activity" android:parentActivityName=".SemesterActivity.SecondSemActivity"/>
+        <activity android:name=".Sem1Activity.FCP1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem1Activity.EDC1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem1Activity.EM1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem1Activity.EP1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem1Activity.ECS1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem1Activity.ICTOne1Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.OS4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.CN4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.DBMS4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.DAA4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.SS4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.OOT4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.DC4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.AC4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.MC4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".Sem4Activity.EMW4Activity" android:parentActivityName=".SemesterActivity.FirstSemActivity"/>
+        <activity android:name=".ExtraActivity.SuggestionsActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+        <activity android:name=".ExtraActivity.AboutActivity" android:parentActivityName=".SemesterActivity.MainActivity"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+    </application>
+
+</manifest>
