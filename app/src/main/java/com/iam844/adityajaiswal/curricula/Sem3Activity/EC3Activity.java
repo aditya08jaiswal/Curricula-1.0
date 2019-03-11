@@ -95,6 +95,7 @@ public class EC3Activity extends AppCompatActivity {
         List<DataURL> examPapers = new ArrayList<>();
         examPapers.add(new DataURL("MidSem 18", "https://drive.google.com/open?id=1W2g4XfbOVRuF7ewyPL2mjo7Cx4P38mZs"));
         examPapers.add(new DataURL("EndSem 18", "https://drive.google.com/open?id=1mami7Qt2BTOkYHi38sM9Tp_f3sD774IW"));
+        examPapers.add(new DataURL("EndSem Supplementary 18", "https://drive.google.com/open?id=1L-uGYfON076-dvQkthEhBAOU_Y02jioH"));
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);

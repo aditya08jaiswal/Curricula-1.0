@@ -86,23 +86,26 @@ public class EMW4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Notes 1 - Mid Sem","https://drive.google.com/open?id=1ovlJw3QE1UecIRt2Q3rYLvBBa_eFZt42"));
+        classMaterials.add(new DataURL("Notes 2 - Mid Sem","https://drive.google.com/open?id=1W67wk9pkkLmrD0s7q3Uddvrc51S0A2la"));
+        classMaterials.add(new DataURL("Antennas","https://drive.google.com/open?id=1Xwg3Ja5AbAgrpTzDAXX0emjWuxzfdsxv"));
+        classMaterials.add(new DataURL("Antenna Problems","https://drive.google.com/open?id=1mf-qMpZTk58KfSpu5ot_RfCu8Z-_IQjB"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Poynting Theorem and Plane waves Propagation","https://drive.google.com/open?id=1K3DRHEMkSJ9bFm-dRCt2AY2_t5q2mtNL"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1vECSNJ3-jnYQrvPmTSf0TZtvZuZI-nWw"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }

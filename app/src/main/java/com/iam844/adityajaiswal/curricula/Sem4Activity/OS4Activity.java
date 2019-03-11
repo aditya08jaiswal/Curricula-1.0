@@ -88,23 +88,24 @@ public class OS4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Virtual Memory","https://drive.google.com/open?id=1o3tkD-KjvFZgpVHQyC_JGhyBpwz13i5L"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Operating System - William Stallings","https://drive.google.com/open?id=1x3cv4Axf2Q8KcB5uRebhjaJL8CfXR2aT"));
+        books.add(new DataURL("William Stallings Solution","https://drive.google.com/open?id=1N57tBsk-oA5p7ErUc2m6YFJ7BTf0UmYQ"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1s89Kr8-rauwYQDW3wBB-csJ3y3BPSFN5"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }

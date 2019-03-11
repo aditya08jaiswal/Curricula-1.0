@@ -100,6 +100,7 @@ public class MPI3Activity extends AppCompatActivity {
         List<DataURL> examPapers = new ArrayList<>();
         examPapers.add(new DataURL("MidSem 18", "https://drive.google.com/open?id=1ErlRRAO3XN72dVg4aYBQqaHU8xWCFgAZ"));
         examPapers.add(new DataURL("EndSem 18", "https://drive.google.com/open?id=1fQZ7UQAP7aJ5bQcU5yWxBCXkmDgMYoqC"));
+        examPapers.add(new DataURL("EndSem Supplementary 18", "https://drive.google.com/open?id=18ycKq9KwGs-MviiTMCTmF2t4a6xsqyX7"));
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);

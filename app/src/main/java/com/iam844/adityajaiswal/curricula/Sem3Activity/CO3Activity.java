@@ -108,6 +108,7 @@ public class CO3Activity extends AppCompatActivity {
         List<DataURL> examPapers = new ArrayList<>();
         examPapers.add(new DataURL("MidSem 18", "https://drive.google.com/open?id=1vm-Wdna5JWWHlgQglWaUhTCisNvyx878"));
         examPapers.add(new DataURL("EndSem 18", "https://drive.google.com/open?id=1UR-C6L7yjbpIhp0OBPoeSJ4JBf2m4-g8"));
+        examPapers.add(new DataURL("EndSem Supplementary 18", "https://drive.google.com/open?id=1MAc7Za4j58510PfbJWbrYs2ttAPf7_rI"));
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);

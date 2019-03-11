@@ -97,6 +97,7 @@ public class CE3Activity extends AppCompatActivity {
         List<DataURL> examPapers = new ArrayList<>();
         examPapers.add(new DataURL("MidSem 18", "https://drive.google.com/open?id=1SgsP8plCgUTp3oQxmegzd54imEEX_gOY"));
         examPapers.add(new DataURL("EndSem 18", "https://drive.google.com/open?id=1-iEUFja-e4Ht-rV1cOqjOGp10LqryRfw"));
+        examPapers.add(new DataURL("EndSem Supplementary 18", "https://drive.google.com/open?id=1EDzctYuppqqs2cqTrUtMvPAbmPviNLis"));
 
 //        listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(0), books);

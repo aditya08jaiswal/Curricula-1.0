@@ -86,23 +86,24 @@ public class DC4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Baseband Communication","https://drive.google.com/open?id=1-46cZYCpV4aD9i0GJo5lsOfdBpunqJwX"));
+        classMaterials.add(new DataURL("Principles Of Digital Data Communication","https://drive.google.com/open?id=1B1w1EtjQJwMGfPnwmXvsZGKgPpb_SyaR"));
+        classMaterials.add(new DataURL("TDM Pulse Code Modulation Transmitter and Receiver Trainer ST2153 and ST2154 Operating","https://drive.google.com/open?id=1ssJED11dtuFirtNsHm_fq_Ds63G95TZn"));
 
         List<DataURL> books = new ArrayList<>();
         books.add(new DataURL("EMPTY!"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1KRKwaCIezNmLjPutbJ1s0GtAHoqPj_am"));
 //        examPapers.add(new DataURL("EndSem 19"));
-
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }
