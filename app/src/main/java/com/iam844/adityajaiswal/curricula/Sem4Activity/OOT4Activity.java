@@ -86,23 +86,29 @@ public class OOT4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Constructor destructor","https://drive.google.com/open?id=1SxioCVbVXfeMXJbzKsmAGncIz-4zuWhM"));
+        classMaterials.add(new DataURL("Exception Handling","https://drive.google.com/open?id=1pzU3urGz8RIUBL93-AmkUXcWYcO-lZh9"));
+        classMaterials.add(new DataURL("Inheritance and Polymorphism","https://drive.google.com/open?id=1Nj0GuunrwxGErBdwERBZrm1gJliy5vCl"));
+        classMaterials.add(new DataURL("OOP (Object Oriented Programming)","https://drive.google.com/open?id=1N1UKM7Ljy9NltjM0WLvrdF5htDqwgkkA"));
+        classMaterials.add(new DataURL("Overloading","https://drive.google.com/open?id=1hdwHRGRosiVUuCJLoM9gN3oU0FOC0ICR"));
+        classMaterials.add(new DataURL("SDLC","https://drive.google.com/open?id=18aYtlqvftfsKL_bruz0a7mrXdEEbbVPb"));
+        classMaterials.add(new DataURL("Reference Notes","https://drive.google.com/open?id=1QkuRd1aBAC2lDVByCyy7BJHiNICR8Sm4"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Unified Modeling Language","https://drive.google.com/open?id=1JZ8SgpenSbwdxTFnlv_SWB3Ma8hMvUaM"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1-DlIT_WEP09QomfR1-Xbhb828YcTipUe"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }

@@ -107,6 +107,7 @@ public class CN4Activity extends AppCompatActivity {
 
         List<DataURL> books = new ArrayList<>();
         books.add(new DataURL("Forouzan - Data Communication and Networking","https://drive.google.com/open?id=1UBA2D22PswgRah0sksP_H6kC-Uj1Fnp5"));
+        books.add(new DataURL("Tanenbaum - Computer Networks","https://drive.google.com/open?id=1Ow6tapniqHV3DgZ8QgKnQbpb-zlbcacB"));
 
         List<DataURL> examPapers = new ArrayList<>();
         examPapers.add(new DataURL("MidSem 19", "https://drive.google.com/open?id=1TtWHIbvPadx_FBZkKZesNK0KfpMaeFh1"));

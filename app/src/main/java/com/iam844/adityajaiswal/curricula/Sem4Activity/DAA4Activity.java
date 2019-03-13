@@ -86,23 +86,26 @@ public class DAA4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Greedy Design Techniques","https://drive.google.com/open?id=1mcQq3k1NZsDqZrmjbexmFftsDPWSS4BF"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Data Structures Algorithms and Applications in C - Sartraj Sahani","https://drive.google.com/open?id=1PvnYnzvAEHAVxCFsR-bTENEBZZ-H7GLs"));
+        books.add(new DataURL("Algorithm Design - John Kleinberg - Éva Tardos","https://drive.google.com/open?id=118IdjlJAI04dfA1rPbH1xDhwy9ZxBa40"));
+        books.add(new DataURL("Introduction to Algorithms","https://drive.google.com/open?id=1aXqdZQpC4GzLs4S3EhdjgXsLKOaJCZE6"));
+        books.add(new DataURL("Cormen Lin Lee - Introduction to Algorithms (Solutions)","https://drive.google.com/open?id=1wQxfgSvbdMQDzhU965Y5oWaP_enys0a9"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1SSw_CX60SW9wW5DgLOUhYC9wghRQ6xdm"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }

@@ -93,6 +93,15 @@ public class OS4Activity extends AppCompatActivity {
         //List
         List<DataURL> classMaterials = new ArrayList<>();
         classMaterials.add(new DataURL("Virtual Memory","https://drive.google.com/open?id=1o3tkD-KjvFZgpVHQyC_JGhyBpwz13i5L"));
+        classMaterials.add(new DataURL("Chapter 1","https://drive.google.com/open?id=1GVmO03N9xPmsEIZ44lLP_PoPYyEkmQTR"));
+        classMaterials.add(new DataURL("Chapter 2","https://drive.google.com/open?id=1VtmGbMIcI8E2i2wRmnKXE-ZKP2jbnw9T"));
+        classMaterials.add(new DataURL("Chapter 3","https://drive.google.com/open?id=1SAmDpUdTXtmHZaFhMKgf3hru7jArqHES"));
+        classMaterials.add(new DataURL("Chapter 4","https://drive.google.com/open?id=14JAJ0ihQTqlosRskq3_CGYRpgSEcyqNy"));
+        classMaterials.add(new DataURL("Chapter 5","https://drive.google.com/open?id=1yiKySxCZHPbDcLvc9oAyaVrxCRGxEExI"));
+        classMaterials.add(new DataURL("Chapter 6","https://drive.google.com/open?id=18nwkAajHXc26CMySJGRhFURDH6TQBSKE"));
+        classMaterials.add(new DataURL("Chapter 7","https://drive.google.com/open?id=1USXmjHQpwD-aTEsHGjrf6Z_8csgXakjn"));
+        classMaterials.add(new DataURL("Chapter 8","https://drive.google.com/open?id=1ZsKt3-w8u7-cz_cc2LfrLP4-cKbHUY5l"));
+        classMaterials.add(new DataURL("Chapter 9","https://drive.google.com/open?id=1sHDNa3GzwkFmsjmuqUXEwQKsEcrA_VOJ"));
 
         List<DataURL> books = new ArrayList<>();
         books.add(new DataURL("Operating System - William Stallings","https://drive.google.com/open?id=1x3cv4Axf2Q8KcB5uRebhjaJL8CfXR2aT"));

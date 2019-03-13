@@ -86,22 +86,26 @@ public class SS4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Introduction","https://drive.google.com/open?id=1mA1iOKuFF7gyaV7zucPu-CKWGdaqxKGs"));
+        classMaterials.add(new DataURL("Lexical Analysis Reference","https://drive.google.com/open?id=13wtZW55-yz_-HWPO1QtzclF9mIfKYbbF"));
+        classMaterials.add(new DataURL("Linkers","https://drive.google.com/open?id=1y0i32u4IWUZVaO5Uv53XLmOwZc86zzx4"));
+        classMaterials.add(new DataURL("Syntax Analysis Ref","https://drive.google.com/open?id=1fpHbt8RJ1B390FvlYqjG_fLASrq2uwCa"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Compilers, Principles, Techniques and Tools","https://drive.google.com/open?id=1ZbnQW6CUVjq7BJjfkaU2d4jt75kj9vEt"));
+        books.add(new DataURL("System Software An Introduction To Systems Programming","https://drive.google.com/open?id=14PQ9GcWPIWi91Q7TdNx0E_FlKIOPTyyL"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1FRhHi0elSayMuWZxTpwCkKKjph4k0BJm"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 }

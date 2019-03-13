@@ -86,23 +86,32 @@ public class DBMS4Activity extends AppCompatActivity {
         //Header
         listDataHeader.add("Class Materials");
         listDataHeader.add("Books");
-//        listDataHeader.add("Exam Papers");
+        listDataHeader.add("Exam Papers");
 
         //List
         List<DataURL> classMaterials = new ArrayList<>();
-        classMaterials.add(new DataURL("EMPTY!"));
+        classMaterials.add(new DataURL("Introduction","https://drive.google.com/open?id=1JumikR1eG4myvLG8Cpm_OpEkSK5VGaTe"));
+        classMaterials.add(new DataURL("Concurrency Control","https://drive.google.com/open?id=1_Ub_qMem6ttmSvdAOqdYQDVay9lx5FGx"));
+        classMaterials.add(new DataURL("Constraints","https://drive.google.com/open?id=18yLiFk9IpwA0e1OUT8m0bmA6sQvnvBTq"));
+        classMaterials.add(new DataURL("Enhanced ER Model","https://drive.google.com/open?id=1mS2zOkenooOsFPv1H-JNqoAuhNatiUGx"));
+        classMaterials.add(new DataURL("Entity Relationship Model","https://drive.google.com/open?id=1nHDW2jRcZHBjC3li9iqQX0xxD4LaKM91"));
+        classMaterials.add(new DataURL("Functional Dependency Basics","https://drive.google.com/open?id=1L3cZO_mnkg9ph7CzAVzlJV3vG37wpqSz"));
+        classMaterials.add(new DataURL("Reduction of schema","https://drive.google.com/open?id=1AjruQmt7h_vcOLfn7ut3Ef6fAhiFJtBg"));
+        classMaterials.add(new DataURL("Relational Algebra","https://drive.google.com/open?id=1y5l8lknGjn5BR1sOd0ZdkjA2V088UU7k"));
+        classMaterials.add(new DataURL("SQL","https://drive.google.com/open?id=1EtoyOqSGhJNlcJFBSI4yom8Leyizko5h"));
+        classMaterials.add(new DataURL("Transaction Control","https://drive.google.com/open?id=18VUjRpBWEbzVAznlrNlKXf7wb4l1hit2"));
 
         List<DataURL> books = new ArrayList<>();
-        books.add(new DataURL("EMPTY!"));
+        books.add(new DataURL("Database System Concepts 6th edition","https://drive.google.com/open?id=15SiK9iiVPG-qSso97gTumff1AXQVTPkr"));
 
-//        List<DataURL> examPapers = new ArrayList<>();
-//        examPapers.add(new DataURL("MidSem 19"));
+        List<DataURL> examPapers = new ArrayList<>();
+        examPapers.add(new DataURL("MidSem 19","https://drive.google.com/open?id=1BV6F8jTwgxN0tPJ9VO9esPN6lDYTQNNP"));
 //        examPapers.add(new DataURL("EndSem 19"));
 
 
         listHash.put(listDataHeader.get(0), classMaterials);
         listHash.put(listDataHeader.get(1), books);
-//        listHash.put(listDataHeader.get(2), examPapers);
+        listHash.put(listDataHeader.get(2), examPapers);
     }
 
 }
