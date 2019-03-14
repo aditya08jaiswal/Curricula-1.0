@@ -16,11 +16,14 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
+import com.iam844.adityajaiswal.curricula.ExtraActivity.AcademicCalendarActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.AboutActivity;
+import com.iam844.adityajaiswal.curricula.ExtraActivity.FirstYearTimeTableActivity;
 import com.iam844.adityajaiswal.curricula.R;
 import com.iam844.adityajaiswal.curricula.Adapter.SemAdapter;
 import com.iam844.adityajaiswal.curricula.Model.Semester;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.SuggestionsActivity;
+import com.iam844.adityajaiswal.curricula.ExtraActivity.SecondYearTimeTableActivity;
 
 import java.util.ArrayList;
 
@@ -83,6 +86,30 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
+
+            case R.id.submenu_firstyear:
+
+                Intent firstyear = new Intent(this, FirstYearTimeTableActivity.class);
+                startActivity(firstyear);
+
+                Toast.makeText(getApplicationContext(),"I Year",Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.submenu_secondyear:
+
+                Intent secondyear = new Intent(this, SecondYearTimeTableActivity.class);
+                startActivity(secondyear);
+
+                Toast.makeText(getApplicationContext(),"II Year",Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.menu_academiccalendar:
+
+                Intent academiccalendar = new Intent(this, AcademicCalendarActivity.class);
+                startActivity(academiccalendar);
+
+                Toast.makeText(getApplicationContext(),"Academic Calendar 18-19",Toast.LENGTH_LONG).show();
+                return true;
 
             case R.id.menu_suggestion:
 

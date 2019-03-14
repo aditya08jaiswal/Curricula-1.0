@@ -3,6 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"    >
 
     <item
+        android:id="@+id/menu_timetable"
+        app:showAsAction="never"
+        android:title="@string/TimeTableMenu">
+        <menu>
+            <item android:id="@+id/submenu_firstyear"
+                android:title="@string/FirstYearSubMenu" />
+            <item android:id="@+id/submenu_secondyear"
+                android:title="@string/SecondYearSubMenu" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_academiccalendar"
+        app:showAsAction="never"
+        android:title="@string/AcademicCalendarMenu">
+    </item>
+
+    <item
         android:id="@+id/menu_suggestion"
         app:showAsAction="never"
         android:title="@string/SuggestionsMenu">
@@ -13,5 +31,7 @@
         app:showAsAction="never"
         android:title="@string/AboutMenu">
     </item>
+
+
 
 </menu>

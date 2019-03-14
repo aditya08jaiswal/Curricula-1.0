@@ -6,15 +6,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.iam844.adityajaiswal.curricula.Fragment.CSE4Fragment;
-import com.iam844.adityajaiswal.curricula.Fragment.ECE4Fragment;
+import com.iam844.adityajaiswal.curricula.Fragment.IYearDivAFragment;
+import com.iam844.adityajaiswal.curricula.Fragment.IYearDivBFragment;
 import com.iam844.adityajaiswal.curricula.R;
 
-public class BranchAdapter extends FragmentPagerAdapter {
+
+public class FirstYearDivisionTimeTableAdapter extends FragmentPagerAdapter {
 
     private Context mContext;
 
-    public BranchAdapter(Context context, FragmentManager fm) {
+    public FirstYearDivisionTimeTableAdapter(Context context, FragmentManager fm) {
         super(fm);
 
         mContext = context;
@@ -24,9 +25,9 @@ public class BranchAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
         if (position == 0) {
-            return new CSE4Fragment();
+            return new IYearDivAFragment();
         } else {
-            return new ECE4Fragment();
+            return new IYearDivBFragment();
         }
     }
 
@@ -41,9 +42,9 @@ public class BranchAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
 
         if (position == 0) {
-            return mContext.getString(R.string.CSE);
+            return mContext.getString(R.string.DivisionA);
         } else {
-            return mContext.getString(R.string.ECE);
+            return mContext.getString(R.string.DivisionB);
         }
     }
 }

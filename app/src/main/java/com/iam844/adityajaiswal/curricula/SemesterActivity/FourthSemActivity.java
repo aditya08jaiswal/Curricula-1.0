@@ -10,7 +10,7 @@ import android.support.design.widget.TabLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
-import com.iam844.adityajaiswal.curricula.Adapter.BranchAdapter;
+import com.iam844.adityajaiswal.curricula.Adapter.Branch4Adapter;
 import com.iam844.adityajaiswal.curricula.R;
 
 public class FourthSemActivity extends AppCompatActivity {
@@ -40,7 +40,7 @@ public class FourthSemActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.sem4_viewPager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        BranchAdapter adapter = new BranchAdapter(this, getSupportFragmentManager());
+        Branch4Adapter adapter = new Branch4Adapter(this, getSupportFragmentManager());
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
