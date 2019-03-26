@@ -126,9 +126,6 @@
             android:name=".Sem4Activity.EMW4Activity"
             android:parentActivityName=".SemesterActivity.FirstSemActivity" />
         <activity
-            android:name=".ExtraActivity.SuggestionsActivity"
-            android:parentActivityName=".MainActivity" />
-        <activity
             android:name=".ExtraActivity.AboutActivity"
             android:parentActivityName=".MainActivity" />
 

@@ -31,6 +31,11 @@
                 android:id="@+id/nav_add_materials"
                 android:icon="@drawable/ic_add_material"
                 android:title="Add Materials" />
+
+            <item
+                android:id="@+id/nav_contribute"
+                android:icon="@drawable/ic_contribute"
+                android:title="Github" />
             <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_feedback"

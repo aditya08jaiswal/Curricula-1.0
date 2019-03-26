@@ -1,6 +1,7 @@
 package com.iam844.adityajaiswal.curricula;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -25,7 +26,6 @@ import com.iam844.adityajaiswal.curricula.ExtraActivity.AboutActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.FirstYearTimeTableActivity;
 import com.iam844.adityajaiswal.curricula.Adapter.SemAdapter;
 import com.iam844.adityajaiswal.curricula.Model.Semester;
-import com.iam844.adityajaiswal.curricula.ExtraActivity.SuggestionsActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.SecondYearTimeTableActivity;
 import com.iam844.adityajaiswal.curricula.SemesterActivity.FirstSemActivity;
 import com.iam844.adityajaiswal.curricula.SemesterActivity.FourthSemActivity;
@@ -65,22 +65,71 @@ public class MainActivity extends AppCompatActivity {
                 // close drawer when item is tapped
                 mDrawerLayout.closeDrawers();
 
-
                 int id = menuItem.getItemId();
 
-                if (id == R.id.nav_firstyear_timetable) {
-                    // Handle the camera action
-                } else if (id == R.id.nav_secondyear_timetable) {
+                switch (id) {
 
-                } else if (id == R.id.nav_academic_calendar) {
+                    case R.id.nav_academic_calendar:
 
-                } else if (id == R.id.nav_add_materials) {
+                        Intent academiccalendar = new Intent(MainActivity.this, AcademicCalendarActivity.class);
+                        startActivity(academiccalendar);
 
+                        Toast.makeText(getApplicationContext(),"Academic Calendar 18-19",Toast.LENGTH_LONG).show();
+                        return true;
+
+                    case R.id.nav_firstyear_timetable:
+
+                        Intent firstyear = new Intent(MainActivity.this, FirstYearTimeTableActivity.class);
+                        startActivity(firstyear);
+
+                        Toast.makeText(getApplicationContext(),"I Year",Toast.LENGTH_LONG).show();
+                        return true;
+
+                    case R.id.nav_secondyear_timetable:
+
+                        Intent secondyear = new Intent(MainActivity.this, SecondYearTimeTableActivity.class);
+                        startActivity(secondyear);
+
+                        Toast.makeText(getApplicationContext(),"II Year",Toast.LENGTH_LONG).show();
+                        return true;
+
+                    case R.id.nav_add_materials:
+
+                        Toast.makeText(getApplicationContext(), "Add materials to Drive", Toast.LENGTH_SHORT).show();
+
+                        Intent intentAddMaterial = new Intent(Intent.ACTION_VIEW);
+                        intentAddMaterial.setData(Uri.parse("https://drive.google.com/drive/folders/1DzCTj34XOVlmk2pmAMtCr8GMtECjRBa4?usp=sharing"));
+                        if (intentAddMaterial.resolveActivity(getPackageManager()) != null) {
+                            startActivity(intentAddMaterial);
+                        }
+                        return true;
+
+                    case R.id.nav_feedback:
+
+                        Toast.makeText(getApplicationContext(), "Your suggestions are valuable", Toast.LENGTH_SHORT).show();
+
+                        Intent intentFeedback = new Intent(Intent.ACTION_SENDTO);
+                        intentFeedback.setData(Uri.parse("mailto:deviam844@gmail.com")); // only email apps should handle this
+                        if (intentFeedback.resolveActivity(getPackageManager()) != null) {
+                            startActivity(intentFeedback);
+                        }
+                        return true;
+
+                    case R.id.nav_contribute:
+
+                        Toast.makeText(getApplicationContext(), "Fork and contribute on GitHub", Toast.LENGTH_SHORT).show();
+
+                        Intent intentContribute = new Intent(Intent.ACTION_VIEW);
+                        intentContribute.setData(Uri.parse("https://github.com/iam844/Curricula"));
+                        if (intentContribute.resolveActivity(getPackageManager()) != null) {
+                            startActivity(intentContribute);
+                        }
+                        return true;
+
+                    default:
+                        return true;
                 }
-                //Add code here to update the UI based on the item selected
-                // For example, swap UI fragments here
 
-                return true;
             }
         });
 
@@ -142,38 +191,6 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         switch (id) {
-
-            case R.id.submenu_firstyear:
-
-                Intent firstyear = new Intent(this, FirstYearTimeTableActivity.class);
-                startActivity(firstyear);
-
-                Toast.makeText(getApplicationContext(),"I Year",Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.submenu_secondyear:
-
-                Intent secondyear = new Intent(this, SecondYearTimeTableActivity.class);
-                startActivity(secondyear);
-
-                Toast.makeText(getApplicationContext(),"II Year",Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.menu_academiccalendar:
-
-                Intent academiccalendar = new Intent(this, AcademicCalendarActivity.class);
-                startActivity(academiccalendar);
-
-                Toast.makeText(getApplicationContext(),"Academic Calendar 18-19",Toast.LENGTH_LONG).show();
-                return true;
-
-            case R.id.menu_suggestion:
-
-                Intent suggestions = new Intent(this, SuggestionsActivity.class);
-                startActivity(suggestions);
-
-                Toast.makeText(getApplicationContext(),"Suggestions",Toast.LENGTH_LONG).show();
-                return true;
 
             case R.id.menu_about:
 

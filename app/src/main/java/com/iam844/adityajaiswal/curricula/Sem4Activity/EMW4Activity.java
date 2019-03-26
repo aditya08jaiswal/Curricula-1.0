@@ -94,6 +94,7 @@ public class EMW4Activity extends AppCompatActivity {
         classMaterials.add(new DataURL("Notes 2 - Mid Sem","https://drive.google.com/open?id=1W67wk9pkkLmrD0s7q3Uddvrc51S0A2la"));
         classMaterials.add(new DataURL("Antennas","https://drive.google.com/open?id=1Xwg3Ja5AbAgrpTzDAXX0emjWuxzfdsxv"));
         classMaterials.add(new DataURL("Antenna Problems","https://drive.google.com/open?id=1mf-qMpZTk58KfSpu5ot_RfCu8Z-_IQjB"));
+        classMaterials.add(new DataURL("Waveguides","https://drive.google.com/open?id=1mfhlATqTqq22yP3VMm5KqWccvxWUH_Hk"));
 
         List<DataURL> books = new ArrayList<>();
         books.add(new DataURL("Poynting Theorem and Plane waves Propagation","https://drive.google.com/open?id=1K3DRHEMkSJ9bFm-dRCt2AY2_t5q2mtNL"));

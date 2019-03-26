@@ -12,13 +12,12 @@
 
     <string name="AcademicCalendarMenu">Academic Calendar</string>
     <string name="AboutMenu">About</string>
-    <string name="SuggestionsMenu">Suggestions</string>
     <string name="TimeTableMenu">Time Table</string>
     <string name="FirstYearSubMenu">I Year</string>
     <string name="SecondYearSubMenu">II Year</string>
 
     <string name="AboutQuestion">What is Curricula?</string>
-    <string name="AboutAnswer">This app is a warehouse for all the engineering related materials for IIIT students. However, it aims to later become a hub of all the study and course materials, as a result of contributions made by other fellow aspiring engineers. Your contributions and suggestions are requested.</string>
+    <string name="AboutAnswer">This app is a warehouse for all the engineering related materials for IIIT Surat students. However, it aims to later become a hub of all the study and course materials, as a result of contributions made by other fellow aspiring engineers. Your contributions and suggestions are requested.</string>
 
     <string name="Developer">Developer</string>
     <string name="AboutDeveloper">Aditya Jaiswal\nIIIT Surat</string>
@@ -60,7 +59,6 @@
     <string name="SECONDSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
     <string name="SS2_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
     <string name="SS4_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="SUGGESTIONS_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
     <string name="THIRDSEM_APP_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
     <string name="title_activity_academic_calendar">AcademicCalendarActivity</string>
 
