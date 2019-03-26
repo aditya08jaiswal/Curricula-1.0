@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_academic_calendar"
+            android:icon="@drawable/ic_academic_calendar"
+            android:title="Academic Calendar" />
+    </group>
+
+    <item android:title="Time Table">
+        <menu>
+            <item
+                android:id="@+id/nav_firstyear_timetable"
+                android:icon="@drawable/ic_firstyear_timetable"
+                android:title="First Year" />
+            <item
+                android:id="@+id/nav_secondyear_timetable"
+                android:icon="@drawable/ic_secondyear_timetable"
+                android:title="Second Year" />
+        </menu>
+    </item>
+
+    <item android:title="Contribute" >
+        <menu>
+            <item
+                android:id="@+id/nav_add_materials"
+                android:icon="@drawable/ic_add_material"
+                android:title="Add Materials" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>

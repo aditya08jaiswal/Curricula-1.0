@@ -6,6 +6,10 @@
     <string name="DivisionA">Division A</string>
     <string name="DivisionB">Division B</string>
 
+
+    <string name="NavigationDrawerOpen">Open navigation drawer</string>
+    <string name="NavigationDrawerClose">Close navigation drawer</string>
+
     <string name="AcademicCalendarMenu">Academic Calendar</string>
     <string name="AboutMenu">About</string>
     <string name="SuggestionsMenu">Suggestions</string>

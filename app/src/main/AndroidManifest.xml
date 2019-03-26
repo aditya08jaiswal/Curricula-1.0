@@ -14,12 +14,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ExtraActivity.AcademicCalendarActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".ExtraActivity.SecondYearTimeTableActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".ExtraActivity.FirstYearTimeTableActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
-        <activity android:name=".SemesterActivity.MainActivity">
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -29,16 +29,16 @@
         </activity>
         <activity
             android:name=".SemesterActivity.FirstSemActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SemesterActivity.SecondSemActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SemesterActivity.ThirdSemActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SemesterActivity.FourthSemActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".Fragment.CSE4Fragment" />
         <activity android:name=".Fragment.ECE4Fragment" />
         <activity
@@ -127,10 +127,10 @@
             android:parentActivityName=".SemesterActivity.FirstSemActivity" />
         <activity
             android:name=".ExtraActivity.SuggestionsActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ExtraActivity.AboutActivity"
-            android:parentActivityName=".SemesterActivity.MainActivity" />
+            android:parentActivityName=".MainActivity" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

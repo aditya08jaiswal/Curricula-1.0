@@ -1,6 +1,10 @@
-package com.iam844.adityajaiswal.curricula.SemesterActivity;
+package com.iam844.adityajaiswal.curricula;
 
 import android.content.Intent;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,17 +23,21 @@ import com.google.android.gms.ads.MobileAds;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.AcademicCalendarActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.AboutActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.FirstYearTimeTableActivity;
-import com.iam844.adityajaiswal.curricula.R;
 import com.iam844.adityajaiswal.curricula.Adapter.SemAdapter;
 import com.iam844.adityajaiswal.curricula.Model.Semester;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.SuggestionsActivity;
 import com.iam844.adityajaiswal.curricula.ExtraActivity.SecondYearTimeTableActivity;
+import com.iam844.adityajaiswal.curricula.SemesterActivity.FirstSemActivity;
+import com.iam844.adityajaiswal.curricula.SemesterActivity.FourthSemActivity;
+import com.iam844.adityajaiswal.curricula.SemesterActivity.SecondSemActivity;
+import com.iam844.adityajaiswal.curricula.SemesterActivity.ThirdSemActivity;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private AdView mAdView;
+    private DrawerLayout mDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,15 +45,53 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Toolbar
-        Toolbar toolbar = findViewById(R.id.toolbar_activity_main);
+        Toolbar toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
+        //Navigation Drawer
+        mDrawerLayout = findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, mDrawerLayout, toolbar, R.string.NavigationDrawerOpen, R.string.NavigationDrawerClose);
+        mDrawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        //Navigation View for items when tapped
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                // set item as selected to persist highlight
+                menuItem.setChecked(true);
+                // close drawer when item is tapped
+                mDrawerLayout.closeDrawers();
+
+
+                int id = menuItem.getItemId();
+
+                if (id == R.id.nav_firstyear_timetable) {
+                    // Handle the camera action
+                } else if (id == R.id.nav_secondyear_timetable) {
+
+                } else if (id == R.id.nav_academic_calendar) {
+
+                } else if (id == R.id.nav_add_materials) {
+
+                }
+                //Add code here to update the UI based on the item selected
+                // For example, swap UI fragments here
+
+                return true;
+            }
+        });
+
+        //Ad
         MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
 
         mAdView = findViewById(R.id.adView_activity_main);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
 
+        //Content
         GridView semGridView = findViewById(R.id.semGridView);
 
         final ArrayList<Semester> semList = new ArrayList<>();
@@ -69,6 +115,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     @Override
